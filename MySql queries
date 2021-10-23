@@ -1,0 +1,25 @@
+create database flights
+show databases
+use flights
+create table login(username varchar(20) , password varchar(20))
+insert into login values("admin" , "admin")
+select * from login
+create table registration(name varchar(20) not null, age varchar(10) , email varchar(20) , phone varchar(20) not null)
+select * from registration
+delete from registration
+create table airlines(id int PRIMARY KEY AUTO_INCREMENT , OPERATING_AIRLINES varchar(20) , DEPARTURE_CITY VARCHAR(20) ,
+ ARRIVAL_CITY VARCHAR(20) , DATE_OF_DEPARTURE DATE NOT NULL , Fare int )
+ desc airlines
+select * FROM airlines
+insert into airlines values(3038734,"INDIGO AIRLINES", "AUSTRALIA", "NEW YORK", "2022-05-02",3000)
+insert into airlines values(3038735,"AIRASIA AIRLINES", "CALIFORNIA", "NEW YORK", "2022-05-04",4000)
+insert into airlines values(3038736,"CANADA AIRLINES", "ARGENTINA", "NEW YORK", "2022-05-06",5000)
+insert into airlines values(3038737,"INDIAN AIRLINES", "HYDERABAD", "BANGALORE", "2022-05-08",4500)
+insert into airlines values(3038739,"AMERICAN AIRLINES", "AMERICA", "AUSTRALIA", "2022-05-12",6000)
+insert into airlines values(3038742,"INDIGO AIRLINES", "CALIFORNIA", "NEW YORK", "2022-05-04",4000)
+insert into airlines values(3038745,"TIBET AIRLINES", "CALIFORNIA", "NEW YORK", "2022-05-16",7000)
+insert into airlines values(3038746,"EMIRATES AIRLINES", "CALIFORNIA", "NEW DELHI", "2022-05-24",10000)
+insert into airlines values(3038747,"DECCAN AIRLINES", "AMERICA", "AUSTRALIA", "2022-05-11",6000)
+insert into airlines values(3038748,"BRITISH AIRLINES", "AMERICA", "AUSTRALIA", "2022-05-10",7000)
+select * from airlines 
+drop table airlines
