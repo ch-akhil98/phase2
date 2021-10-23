@@ -10,6 +10,7 @@
 </head>
 <body>
               <h2><%=request.getParameter("cardname")%> Your Ticket is Booked</h2>
+              <%request.getAttribute("name"); %>
 
 	
 
